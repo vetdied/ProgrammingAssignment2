@@ -35,5 +35,5 @@ cacheSolve <- function(x, ...) { ## Take a matrix called x
   +  data <- x$get()          ## get the matrix from the makeCaCheMatrix function                   
   +  invert <- solve(data, ...) ## calculate the inverse of the matrix               
   +  x$setInverse(invert)     ## Store the caculated solution using setinverse in cache                    
-  
+     invert                   ## Return the result
 }
